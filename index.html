@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDIO — Project Archive</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen" role="status" aria-label="Loading archive">
+      <div class="loading-inner">
+        <div class="loading-brand">STUDIO<span>®</span></div>
+        <div class="loading-text" data-i18n="loadingText">Loading Archive</div>
+        <div class="loading-bar"><span></span></div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="header-left">
+        <div class="brand">STUDIO<span class="brand-dot">®</span></div>
+        <nav class="nav">
+          <a href="#" class="is-active" data-i18n="navProjects">Projects</a>
+          <a href="#" data-i18n="navInfo">Info</a>
+          <a href="#" data-i18n="navContact">Contact</a>
+        </nav>
+      </div>
+      <div class="lang">
+        <span class="lang-en active">EN</span><span class="sep">/</span><span class="lang-zh muted">中文</span>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Menu"><span></span><span></span></button>
+    </header>
+
+    <button class="corner corner--left" type="button"><span data-i18n="filterProjects">Filter Projects</span> <i>+</i></button>
+    <button class="corner corner--right" type="button"><span data-i18n="gridView">Grid view</span> <i>+</i></button>
+
+    <div class="scene">
+      <div class="gallery" id="gallery"></div>
+      <div class="center" id="center">
+        <div class="center-default" id="centerDefault">
+          <p class="center-eyebrow" data-i18n="selectedWorks">Selected Works — 2014 / 2026</p>
+          <h1 class="center-title"><span data-i18n="weAre">We are</span> <em data-i18n="studio">STUDIO.</em></h1>
+          <p class="center-sub" data-i18n="studioSub">An independent architecture &amp; spatial design practice.</p>
+        </div>
+        <div class="center-project" id="centerProject">
+          <div class="preview-img" id="previewImg"><img src="public/image-1.png" alt="" /></div>
+          <p class="preview-cat" id="previewCat">Store Design</p>
+          <h2 class="preview-title" id="previewTitle">Untitled</h2>
+        </div>
+      </div>
+      <div class="labels" id="labels"></div>
+    </div>
+
+    <div class="mobile-preview" id="mobilePreview">
+      <p class="mp-cat" id="mpCat">Store Design</p>
+      <h1 class="mp-title" id="mpTitle">Duhui Peninsula</h1>
+      <div class="mp-img" id="mpImg"><img src="public/image-1.png" alt="" /></div>
+      <a class="mp-view" href="#"><span data-i18n="viewProject">View project</span> <i>+</i></a>
+    </div>
+
+    <div class="mobile-ring-hitbox" id="ringHitbox"></div>
+    <button class="lang-toggle-mobile" id="langToggleMobile" type="button">EN / 中文</button>
+    <div class="custom-cursor" id="cursor"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
