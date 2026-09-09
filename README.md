@@ -2,7 +2,7 @@
 
 A 3D interactive project archive website for an independent architecture and spatial design practice. Built with vanilla JavaScript, CSS, and GSAP.
 
-![STUDIO Archive](public/image-1.png)
+![STUDIO Archive](assets/image-1.png)
 
 ## Features
 
@@ -22,7 +22,7 @@ STUDIO Archive/
 ├── index.html          # Main HTML structure
 ├── script.js           # All JavaScript logic (ring, animations, i18n)
 ├── styles.css          # All styles (desktop + mobile)
-└── public/             # Project images
+└── assets/             # Project images
     ├── image-1.png
     ├── image-2.png
     ├── ...

@@ -15,7 +15,7 @@ const IMAGES = [
   "image-1","image-2","image-3","image-4","image-5","image-6",
   "image-7","image-8","image-9","image-10","image-11","image-12",
   "image-15","13","14",
-].map((n) => `public/${n}.png`);
+].map((n) => `assets/${n}.png`);
 
 const TRANSLATIONS = {
   en: {
